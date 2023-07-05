@@ -18,7 +18,7 @@ export class AuthResolver {
 
   @Query(() => MorInfo)
   @common.UseGuards(GqlDefaultAuthGuard, gqlACGuard.GqlACGuard)
-  async userInfo(morInfo): Promise<MorInfo> {
-    return morInfo;
+  async morInfo(@UserData() entityInfo: MorInfo): Promise<MorInfo> {
+    return entityInfo;
   }
 }
