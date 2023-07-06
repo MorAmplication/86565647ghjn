@@ -9,6 +9,6 @@ export class JwtStrategy extends JwtStrategyBase {
     @Inject(JWT_SECRET_KEY) secretOrKey: string,
     protected readonly morService: MorService
   ) {
-    super(morService, secretOrKey);
+    super(secretOrKey, morService);
   }
 }
