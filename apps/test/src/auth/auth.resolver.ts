@@ -6,7 +6,6 @@ import { GqlDefaultAuthGuard } from "./gqlDefaultAuth.guard";
 import { UserData } from "./userData.decorator";
 import { LoginArgs } from "./LoginArgs";
 import { MorInfo } from "./MorInfo";
-declare const morInfo;
 
 @Resolver(MorInfo)
 export class AuthResolver {
