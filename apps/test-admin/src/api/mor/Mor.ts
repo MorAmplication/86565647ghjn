@@ -1,8 +1,8 @@
 import { JsonValue } from "type-fest";
 
 export type Mor = {
-  id: string;
   createdAt: Date;
+  id: string;
   updatedAt: Date;
   username: string;
   roles: JsonValue;
