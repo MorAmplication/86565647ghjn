@@ -8,8 +8,8 @@ generator client {
 }
 
 model Mor {
-  id        String   @id @default(cuid())
   createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
   updatedAt DateTime @updatedAt
   username  String   @unique
   password  String
@@ -17,8 +17,8 @@ model Mor {
 }
 
 model Mor {
-  id        String   @id @default(cuid())
   createdAt DateTime @default(now())
+  id        String   @id @default(cuid())
   updatedAt DateTime @updatedAt
   username  String   @unique
   password  String
